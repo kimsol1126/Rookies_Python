@@ -1,0 +1,4 @@
+Today is the 4th day of training.
+Today, we learned how to use Python to load and save directories and files, how to send emails, how to do regular expressions and web crawling, and more.
+123456-*******
+991126-*******
