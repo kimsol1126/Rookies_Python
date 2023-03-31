@@ -3,7 +3,7 @@
 import requests
 import json
 
-slack_url = "https://hooks.slack.com/services/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"
+slack_url = "https://hooks.slack.com/services/T050JQ0PJNT/B0511SCTNG4/…"
 
 def sendSlacWebhook(strText):
     headers = {"Content-type": "application/json"}
