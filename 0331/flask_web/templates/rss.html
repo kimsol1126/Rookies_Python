@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>RSS Feed Reader</title>
+        <!--CSS, JS-->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='rss.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <h1> RSS Feed Reader </h1>
+            <table>
+                <thead><!--테이블 헤더값-->
+                    <tr>
+                        <th>Title</th>
+                        <th>Link</th>
+                        <th>Description</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <!--코드 사용 시 {%%}로 범위 지정*/-->
+                    {% for entry in feed.entries %}
+                    <tr>
+                        <td>{{entry.title}}</td>
+                        <td><a href="{{entry.link}}">{{entry.link}}</td>
+                        <td>{{entry.description}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
