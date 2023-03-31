@@ -35,7 +35,7 @@ def to_excel(titles, links, descriptions, authors, pubDates):
 
 
 def sendSlacWebhook(strText):
-    slack_url = "https://hooks.slack.com/services/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"
+    slack_url = "https://hooks.slack.com/services/T050JQ0PJNT/B0511SCTNG4/…"
 
     headers = {"Content-type": "application/json"}
     data = {"text":strText}
